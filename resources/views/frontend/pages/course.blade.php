@@ -70,7 +70,7 @@
                             alt="Instructor">
                         <div>
                             <p class="text-[10px] opacity-40 uppercase font-black">Instructor</p>
-                            <p class="text-sm font-bold">Sultanul Arifinee</p>
+                            <p class="text-sm font-bold"> Agency</p>
                         </div>
                     </div>
                     <div class="w-px h-10 bg-white/10 hidden sm:block"></div>

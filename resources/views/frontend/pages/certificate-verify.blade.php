@@ -18,7 +18,7 @@
                 <h2 class="mx-auto text-4xl md:text-6xl">Verify Certificate</h2>
                 <div class="line mx-auto"></div>
                 <p class="text-[11px] opacity-50 uppercase tracking-[0.3em] mt-4 italic">Validate your achievement with
-                    Arifine Academy</p>
+                    Agency Academy</p>
             </div>
 
             <div class="glass p-4 rounded-[2rem] border-white/10 shadow-2xl reveal mb-12 max-w-2xl mx-auto">

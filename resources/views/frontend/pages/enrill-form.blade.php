@@ -114,7 +114,7 @@
                         🚀 Confirm My Enrollment
                         </button>
                         <p class="text-center text-[9px] opacity-40 uppercase tracking-widest mt-6">
-                            Verified by Sultanul Arifinee • Alpha Coder
+                            Verified by  Agency • Alpha Coder
                         </p>
                     </div>
                 </form>

@@ -114,7 +114,7 @@
                         <div
                             class="glass inline-block px-4 py-1 rounded-full border-primary/30 text-[10px] font-black text-primary uppercase mb-4">
                             Founder & CEO</div>
-                        <h4 class="text-2xl font-black uppercase tracking-tighter">Sultanul Arifinee</h4>
+                        <h4 class="text-2xl font-black uppercase tracking-tighter"> Agency</h4>
                         <p class="text-xs opacity-40 mt-2 font-medium italic">Full-stack Expert & Mentor</p>
                     </div>
                 </div>

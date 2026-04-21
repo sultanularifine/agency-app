@@ -37,7 +37,7 @@
                         <div class="glass p-6 rounded-2xl border-white/5 group hover:border-primary/30 transition-all">
                             <div class="text-primary text-2xl mb-4 group-hover:scale-110 transition-transform">📧</div>
                             <h4 class="text-[10px] font-black uppercase tracking-widest opacity-40 mb-2">Email</h4>
-                            <p class="text-sm font-bold">sultanularifine@gmail.com</p>
+                            <p class="text-sm font-bold">Agency@gmail.com</p>
                         </div>
                     </div>
 

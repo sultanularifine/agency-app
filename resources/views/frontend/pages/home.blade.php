@@ -231,7 +231,7 @@
                         <div class="glass p-8 rounded-[2rem] relative h-full">
                             <span
                                 class="text-5xl text-primary opacity-20 absolute top-6 right-8 italic font-serif">"</span>
-                            <p class="text-sm italic opacity-80 leading-relaxed mb-6">"Sultanul is a highly skilled
+                            <p class="text-sm italic opacity-80 leading-relaxed mb-6">" is a highly skilled
                                 developer. He delivered my e-commerce project on time with an amazing admin panel."</p>
                             <div class="flex items-center gap-4">
                                 <div
@@ -303,7 +303,7 @@
                         <div class="glass p-8 rounded-[2rem] relative h-full">
                             <span
                                 class="text-5xl text-primary opacity-20 absolute top-6 right-8 italic font-serif">"</span>
-                            <p class="text-sm italic opacity-80 leading-relaxed mb-6">"Arifine developed my WordPress
+                            <p class="text-sm italic opacity-80 leading-relaxed mb-6">"Agency developed my WordPress
                                 website perfectly and graphic design also. Delivered on time and exceeded expectations.
                                 Proud to have 5+ satisfied WordPress projects and 30+ graphic Design!"</p>
                             <div class="flex items-center gap-4">

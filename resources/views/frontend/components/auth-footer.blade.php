@@ -1,3 +1,3 @@
   <div class="simple-footer">
-      Copyright &copy; Arifine 2014
+      Copyright &copy; Agency 2014
   </div>

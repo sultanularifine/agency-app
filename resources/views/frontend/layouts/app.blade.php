@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Sultanul Arifinee | Web Developer & CEO')</title>
+    <title>@yield('title', ' Agency | Web Developer & CEO')</title>
 
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -21,7 +21,7 @@
     <!-- Custom Styles -->
     <style>
         * {
-            cursor: none;
+            /* cursor: none; */
         }
 
         body {
@@ -261,76 +261,185 @@
             }
         }
     </script>
+     <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff4d4d',
+                        darkBg: '#050505',
+                        lightBg: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
     <script>
-        // --- Custom Cursor ---
+        // --- Custom Cursor (Optimized & Fast) ---
         const dot = document.getElementById('cursor-dot');
         const outline = document.getElementById('cursor-outline');
+
+        let mouseX = 0, mouseY = 0;
+        let outlineX = 0, outlineY = 0;
+
         window.addEventListener('mousemove', (e) => {
-            gsap.to(dot, { x: e.clientX, y: e.clientY, duration: 0.1 });
-            gsap.to(outline, { x: e.clientX, y: e.clientY, duration: 0.3 });
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            // Instant dot (no lag)
+            gsap.set(dot, { x: mouseX, y: mouseY });
         });
 
-        // --- GSAP Scroll Reveal (Veshe othar effect) ---
+        // Smooth outline follow (no stacking lag)
+        function animateCursor() {
+            outlineX += (mouseX - outlineX) * 0.15;
+            outlineY += (mouseY - outlineY) * 0.15;
+
+            gsap.set(outline, { x: outlineX, y: outlineY });
+
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+
+
+        // --- GSAP Scroll Reveal ---
         gsap.registerPlugin(ScrollTrigger);
+
         document.querySelectorAll('.reveal').forEach((el) => {
-            gsap.to(el, {
-                opacity: 1, y: 0, duration: 1, ease: "power3.out",
-                scrollTrigger: { trigger: el, start: "top 85%", toggleActions: "play none none none" }
-            });
+            gsap.fromTo(el,
+                { opacity: 0, y: 40 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power3.out",
+                    scrollTrigger: {
+                        trigger: el,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    }
+                }
+            );
         });
 
-        // --- Magnetic Buttons ---
+
+        // --- Magnetic Buttons (Optimized) ---
         document.querySelectorAll('.magnetic-btn').forEach(btn => {
             btn.addEventListener('mousemove', (e) => {
                 const rect = btn.getBoundingClientRect();
-                const x = e.clientX - rect.left - rect.width / 2;
-                const y = e.clientY - rect.top - rect.height / 2;
-                gsap.to(btn, { x: x * 0.3, y: y * 0.3, duration: 0.3 });
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
+
+                gsap.to(btn, {
+                    x: x,
+                    y: y,
+                    duration: 0.2,
+                    ease: "power2.out"
+                });
             });
+
             btn.addEventListener('mouseleave', () => {
-                gsap.to(btn, { x: 0, y: 0, duration: 0.3 });
+                gsap.to(btn, {
+                    x: 0,
+                    y: 0,
+                    duration: 0.3,
+                    ease: "elastic.out(1, 0.4)"
+                });
             });
         });
 
+
+        // --- Typed Text ---
         new Typed('#typed-text', {
             strings: [
-                'Scale Your Brand with <span class="bg-gradient-to-r from-red-500 via-pink-500 to-orange-400 bg-clip-text text-transparent">Arifine Dev</span>',
+                'Scale Your Brand with <span class="bg-gradient-to-r from-red-500 via-pink-500 to-orange-400 bg-clip-text text-transparent">Agency</span>',
             ],
             typeSpeed: 60,
-            backSpeed: 0,
             showCursor: true,
             loop: false,
             contentType: 'html'
         });
 
-        // --- Three.js Particles ---
+
+        // --- Three.js Particles (Optimized) ---
         let scene, camera, renderer, particles;
+
         function init3D() {
             scene = new THREE.Scene();
-            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-            renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+
+            camera = new THREE.PerspectiveCamera(
+                75,
+                window.innerWidth / window.innerHeight,
+                0.1,
+                1000
+            );
+
+            renderer = new THREE.WebGLRenderer({
+                antialias: true,
+                alpha: true
+            });
+
             renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
             document.getElementById('canvas-container').appendChild(renderer.domElement);
-            const pGeometry = new THREE.BufferGeometry();
-            const pVertices = [];
-            for (let i = 0; i < 1500; i++) {
-                pVertices.push(THREE.MathUtils.randFloatSpread(50), THREE.MathUtils.randFloatSpread(50), THREE.MathUtils.randFloatSpread(50));
+
+            const geometry = new THREE.BufferGeometry();
+            const vertices = [];
+
+            for (let i = 0; i < 1000; i++) { // reduced for performance
+                vertices.push(
+                    THREE.MathUtils.randFloatSpread(50),
+                    THREE.MathUtils.randFloatSpread(50),
+                    THREE.MathUtils.randFloatSpread(50)
+                );
             }
-            pGeometry.setAttribute('position', new THREE.Float32BufferAttribute(pVertices, 3));
-            particles = new THREE.Points(pGeometry, new THREE.PointsMaterial({ color: 0xff4d4d, size: 0.1, transparent: true, opacity: 0.4 }));
+
+            geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+
+            const material = new THREE.PointsMaterial({
+                color: 0xff4d4d,
+                size: 0.08,
+                transparent: true,
+                opacity: 0.5
+            });
+
+            particles = new THREE.Points(geometry, material);
             scene.add(particles);
+
             camera.position.z = 15;
         }
+
         function animate() {
             requestAnimationFrame(animate);
+
             particles.rotation.y += 0.001;
+
             renderer.render(scene, camera);
         }
-        init3D(); animate();
 
+        init3D();
+        animate();
+
+
+        // --- Responsive Resize Fix ---
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+
+        // --- Theme Toggle ---
         document.getElementById('theme-toggle').addEventListener('click', () => {
             document.documentElement.classList.toggle('dark');
         });
+
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {

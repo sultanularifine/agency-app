@@ -20,7 +20,7 @@
 
                     <h1 class="text-4xl md:text-7xl  font-black mb-8 leading-[1.1] uppercase tracking-tighter">
                         Scale Your Skills with <br>
-                        <span class="text-primary inline-block hover:skew-x-2 transition-transform duration-500">Arifine
+                        <span class="text-primary inline-block hover:skew-x-2 transition-transform duration-500">Agency
                             Academy</span>
                     </h1>
 
@@ -88,7 +88,7 @@
                 <div class="reveal glass p-8 rounded-[3rem] border-white/5 italic opacity-80 text-sm leading-loose">
                     "আমাদের লক্ষ্য হলো বাংলাদেশের প্রযুক্তিগত দক্ষতাকে আন্তর্জাতিক পর্যায়ে নিয়ে যাওয়া। প্রতিটি
                     শিক্ষার্থী যেন নিজের পায়ে দাঁড়াতে পারে, সেটাই আমাদের সার্থকতা।" <br>
-                    <span class="text-primary font-black mt-4 block uppercase">— Sultanul Arifinee</span>
+                    <span class="text-primary font-black mt-4 block uppercase">—  Agency</span>
                 </div>
             </div>
         </section>
@@ -141,7 +141,7 @@
                             <img src="image.png"
                                 class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500">
                         </div>
-                        <h4 class="text-xl font-black uppercase">Sultanul Arifinee</h4>
+                        <h4 class="text-xl font-black uppercase"> Agency</h4>
                         <p class="text-primary text-[9px] font-black uppercase tracking-widest mb-4">Lead Instructor &
                             CEO</p>
                         <p class="text-[11px] opacity-50 italic">Expert in Laravel, UI/UX and Full-stack solutions.</p>

@@ -1,6 +1,6 @@
  <nav class="fixed w-full z-50 px-4 md:px-12 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center glass p-4 rounded-2xl">
-            <a href="{{ route('home') }}"><span class="text-xl font-extrabold tracking-tighter text-primary uppercase">Arifine<span
+            <a href="{{ route('home') }}"><span class="text-xl font-extrabold tracking-tighter text-primary uppercase">Agency<span
                         class="text-slate-400 dark:text-white">.dev</span></span></a>
             <div class="hidden lg:flex items-center space-x-6 text-[10px] font-bold uppercase tracking-[0.2em] opacity-80">
                 <a href="{{ route('home') }}" class="hover:text-primary transition magnetic-btn">Home</a>
@@ -67,7 +67,7 @@
 
             <div class="flex items-center space-x-4">
                 <button id="theme-toggle" class="p-2.5 rounded-xl glass hover:border-primary magnetic-btn">🌓</button>
-                <a href="{{ route('enrill-form') }}"
+                <a href=""
                     class="bg-primary px-5 py-3.5 font-bold text-[11px] uppercase rounded-xl glass shadow-lg hover:border-primary magnetic-btn text-white">Sign
                     Up</a>
             </div>
@@ -126,7 +126,7 @@
             </svg>
         </a>
 
-        <a href="https://linkedin.com/in/sultanularifine" target="_blank"
+        <a href="https://linkedin.com/in/Agency" target="_blank"
             class="glass dock-item text-blue-400 hover:bg-blue-600 hover:text-white">
             <span class="dock-name">LinkedIn</span>
             <svg viewBox="0 0 24 24">
@@ -135,7 +135,7 @@
             </svg>
         </a>
 
-        <a href="https://www.facebook.com/sultanularifine.official" target="_blank"
+        <a href="https://www.facebook.com/Agency.official" target="_blank"
             class="glass dock-item text-blue-500 hover:bg-blue-500 hover:text-white">
             <span class="dock-name">Facebook</span>
             <svg viewBox="0 0 24 24">
@@ -144,7 +144,7 @@
             </svg>
         </a>
 
-        <a href="https://github.com/sultanularifine" target="_blank"
+        <a href="https://github.com/Agency" target="_blank"
             class="glass dock-item text-gray-800 hover:bg-gray-800 hover:text-white">
             <span class="dock-name">GitHub</span>
             <svg viewBox="0 0 24 24" fill="currentColor">

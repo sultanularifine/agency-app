@@ -16,7 +16,7 @@
                     <h3 class="text-primary font-mono text-[10px] uppercase tracking-[0.5em] mb-6 italic">Next Gen
                         Developers</h3>
                     <h1 class="text-5xl md:text-7xl font-black mb-8 leading-tight uppercase tracking-tighter">
-                        Empower Your Future with <br> <span class="text-primary">Arifine Internship</span>
+                        Empower Your Future with <br> <span class="text-primary">Agency Internship</span>
                     </h1>
                     <p class="text-lg opacity-60 mb-10 max-w-lg leading-relaxed font-medium italic">
                         শুধুমাত্র থিওরি নয়, আমাদের রিয়েল-ওয়ার্ল্ড প্রজেক্টে কাজ করে নিজেকে একজন প্রফেশনাল ডেভেলপার
@@ -100,10 +100,10 @@
             
             <div class="glass p-8 rounded-[2.5rem] flex items-center gap-6 border-white/5 reveal group hover:border-primary/20 transition-all duration-500">
                 <div class="w-24 h-24 flex-shrink-0 rounded-2xl overflow-hidden grayscale group-hover:grayscale-0 transition-all shadow-xl border border-white/10">
-                    <img src="image.png" class="w-full h-full object-cover" alt="Sultanul Arifinee">
+                    <img src="image.png" class="w-full h-full object-cover" alt=" Agency">
                 </div>
                 <div>
-                    <h4 class="text-xl font-black uppercase tracking-tighter">Sultanul Arifinee</h4>
+                    <h4 class="text-xl font-black uppercase tracking-tighter"> Agency</h4>
                     <p class="text-primary text-[9px] font-black uppercase tracking-widest mb-2">Backend & Laravel Expert</p>
                     <p class="text-[11px] opacity-50 italic">CEO, Alpha Coder.</p>
                 </div>

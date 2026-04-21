@@ -117,9 +117,9 @@
             <div class="reveal">
                 <h3 class="text-[10px] font-black uppercase tracking-widest opacity-40 mb-8">Meet Your Mentor</h3>
                 <div class="flex gap-8 items-start mb-8">
-                    <img src="mentor.jpg" class="w-24 h-24 rounded-3xl border-2 border-primary" alt="Sultanul Arifinee">
+                    <img src="mentor.jpg" class="w-24 h-24 rounded-3xl border-2 border-primary" alt=" Agency">
                     <div>
-                        <h4 class="text-3xl font-black uppercase tracking-tighter">Sultanul Arifinee</h4>
+                        <h4 class="text-3xl font-black uppercase tracking-tighter"> Agency</h4>
                         <p class="text-primary font-bold text-sm mb-4">CEO, Alpha Coder</p>
                         <p class="text-sm opacity-60 leading-relaxed italic">৫ বছরেরও বেশি সময় ধরে ডিজিটাল সলিউশন এবং
                             মেন্টরশিপের অভিজ্ঞতা নিয়ে আমি আপনাদের গাইড করব।</p>
